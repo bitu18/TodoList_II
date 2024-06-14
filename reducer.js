@@ -5,7 +5,8 @@ import dateFormat from './unity/date.js';
 When we sort the list, the indexes change, while th index value of actions 'TOGGLE' and 'DELETE' 
 use the original indexes, leading to mismatches.
 The id must be in '...' because it is a string */
-import { v4 as uuidv4 } from '../node_modules/uuid/dist/esm-browser/index.js'; // library
+import { v4 as uuidv4 } from 'https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/esm-browser/index.js'; // library
+
 
 const init = {
     todos: storage.get(),
